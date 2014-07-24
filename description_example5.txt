@@ -1,0 +1,16 @@
+example5 - spiked and unspiked samples, illustrating CCP estimation
+
+ID: 40 biological samples
+run: 6 replications (not representing 96 well plates)
+each ID is present in each run, with 2 unspiked and 2 spiked observations.
+
+sampleType: distinguishes negative controls ('NC'), 'spiked' and 'unspiked' biological samples
+model structure: ID crossed with run
+
+- 12 responders
+- 28 nonresponders
+
+for CCP estimation: choose sampleType=unspiked in the normalization / SCP part
+and sampleType = spiked in the CCP part
+
+

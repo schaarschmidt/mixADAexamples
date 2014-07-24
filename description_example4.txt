@@ -1,0 +1,19 @@
+example4 - spiked and unspiked: illustrating CCP estimation
+
+ID: unique identifcator of 40 individual biological samples
+run: Unique ID of 6 technical runs (i.e., NOT representing 96 well plates)
+for each ID there are 2 unspiked and 2 spiked replications at each run
+
+sampleType: distinguishes negative controls ('NC'), 'spiked' and 'unspiked' observations
+
+Note: variable ID has exactly the same values for spiked and unspiked observations obtained from the same biological sample
+
+normalization: log-transform
+model structure: ID crossed with run
+
+irrespective of different choices of variance components: 18 responders, 22 non-responders
+
+after log-transformation: no deviatuion from normality in the non-responder subgroup
+
+for CCP estimation: choose sampleType=unspiked in the normalization / SCP part
+and sampleType = spiked in the CCP part

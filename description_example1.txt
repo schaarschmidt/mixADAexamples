@@ -1,0 +1,12 @@
+example1 - very few responders
+
+40 biological samples (distinguished in variable subjectID) are analyzed at each of 3 days and on each of 3 plates per day
+variable treatment distinguishes negative controls ('negcontrol') from biological samples ('sample')
+there are 4 obs. of a negative control within each plate 
+
+normalize: log-transform and substract mean
+model structure: runs crossed with biological samples.
+when running a model with many parameters (random effects and residual variance different between subgroups), a simple model with 1 component is better than a 2-component mixture
+when running a mixture model with random effects and residual variance assumed equal in both subgroups, a 2-component mixture is better than a simple model with 1 component
+
+irrespective of the model choice, the same 2 individuals are classified as responders in the 2-component mixture

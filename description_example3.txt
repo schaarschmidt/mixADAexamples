@@ -1,0 +1,14 @@
+example3 - design only analyzable under considerable simplifications
+
+biological samples: 30 patients
+furrther structures: 2 analysts, 4 days, within each day: 3 plates (i.e., within each analyst: 6 plates)
+15 patients are only analysed at days 1 and 2, by analyst 1
+the remaining 15 patients are only analysed at days 3 and 4, by analyst 2  
+patients are nested within analysts and crossed with days within analyst and crossed with plates within analyst
+plates are nested in analysts and days
+
+this is one of many possible examples where the experimental structure can not be adequately represented in mixADA
+
+- samples (patients) are not crossed with any of analyst, day, plate
+- when using only analyst as run, and specifiying model structure as 'samples nested in runs': the three potential effects day, plate, residual are all analysed as residual error, which might be an inadequate simplification
+- when averaging over replications within patient and analysing the 30 patient averages: variance of single observations due to analysts, days, plates and residuals is ignored, what might be inadequate as well
