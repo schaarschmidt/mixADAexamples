@@ -1,0 +1,10 @@
+example data set simulated according to example 2 in Schaarschmidt et al. (submitted)
+
+120 specimens (una,mbiguously distinguished by the variable sampleID)
+
+technical replications invlove 3 days, 6 plates within each day
+the combination of the variables day and plate provides a unique ID variable of the technical 'plate'
+variable sampletype distinguishes negative controls ('NC'), unspiked biological specimens ('untreated'), spiked biological specimens ('treated'), and positive controls
+
+normalize: log-transform and substract mean
+model structure: days crossed with biological samples (ignoring plate effect within day)

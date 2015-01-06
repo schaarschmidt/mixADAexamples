@@ -1,0 +1,13 @@
+Simulated data according to a data set published by Kubiak et al. (2013)
+
+50 biological specimens, variable ID unambiguously identifies these specimens
+
+each specimen analysed on each of 4 plates
+
+data are already normalized
+
+model structure: runs crossed with biological samples
+
+Data are simulated such that summary statistics and relevant estimates are close to those that could be obtained by fittingb the data set published by 
+
+Kubiak, R.J., Zhang, L.J., Zhang, J.C., Zhu, Y., Lee, N., Weichold, F.F., Yang, H., Abraham, V., Akufongwe, P.F., Hewitt, L., Robinson, S., Liu, W.Y., Liu, X., Patnaik, M.M., Spitz, S., Wu, Y.L., and Roskos, L.K., 2013. Correlation of screening and confirmatory results in tiered immunogenicity testing by solution-phase bridging assays. J. Pharm. Biomed. Anal. 74, 235–245, Table A1 of the Appendix.
